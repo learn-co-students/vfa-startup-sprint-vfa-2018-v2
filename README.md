@@ -1,34 +1,25 @@
----
-tags: sinatra, template
-languages: ruby
----
+# Startup Sprint
 
-# Sinatra No Database App Template
+This is a partially finished app with a ton of work left in the backlog.
+It's up to you and your teammates to generate as much velocity as you
+can!
 
-## Structure
+## Overview
 
-```bash
-sinatra-no-db-lab-template/
-├── Gemfile
-├── Gemfile.lock
-├── README.md
-├── Rakefile
-├── app.rb
-├── config
-│   └── environment.rb
-├── config.ru
-├── models
-│   └── sample_model.rb
-├── public
-│   ├── images
-│   ├── javascripts
-│   └── stylesheets
-├── spec
-│   ├── sample_model_spec.rb
-│   └── spec_helper.rb
-└── views
-```
+The backlog is here in this [Trello board](https://trello.com/b/Wk9YRL5H/flatiron-school-vfa-2015#).
 
-## Usage
+From the menu on the right, copy the Trello board to one of your own.
+Then start looking through the cards and picking out the ones that seem
+most cost effective to implement for your team.
 
-This template will power labs using Sinatra/Rack. This is for simple apps that do not use ActiveRecord or have a database.
+## Getting Started
+
+Fork and clone this lab. You'll probably want to add your team mates as
+collaborators on your Github repo so that you can collaborate. Watch out
+for merge conflicts though!
+
+You'll need to run `bundle install` to install all the necessary Ruby
+gems.
+
+Start the server with the `rackup` command, you can then view it at
+"http://localhost:9292".

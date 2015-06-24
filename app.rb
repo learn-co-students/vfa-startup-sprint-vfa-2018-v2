@@ -2,7 +2,19 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   get '/' do
+    @error = params['error']
     erb :home
+  end
+
+  post '/subscribe' do
+    @full_name = params[:full_name]
+    @email = params[:email]
+
+    if !@email.match(/.+@.+/)
+      redirect to('/?error=email')
+    end
+
+    erb :subscribe
   end
 
   get '/reddit' do
