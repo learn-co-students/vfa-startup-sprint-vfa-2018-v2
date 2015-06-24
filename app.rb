@@ -50,3 +50,15 @@ class App < Sinatra::Base
     erb :schedule
   end
 end
+
+class App < Sinatra::Base
+  get '/fib/:n' do
+    # TODO: implement an algorithm to calculate the fibonacci sequence at
+    # the nth position and display
+    # (4) points
+  end
+
+  def fib(n)
+    # TODO: calculate fib
+  end
+end
