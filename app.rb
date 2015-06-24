@@ -58,6 +58,12 @@ class App < Sinatra::Base
     # (4) points
   end
 
+  get '/team-randomizer' do
+    # TODO: provide a form with a textarea that asks for a list of comma
+    # separated names. Randomize this list of names and display it as an
+    # ordered list (<ol>). 5 points
+  end
+
   def fib(n)
     # TODO: calculate fib
   end
