@@ -47,24 +47,8 @@ class App < Sinatra::Base
       ['6:30pm', 'Meetup Presentation'],
     ]
 
+    # TODO: add a third day's schedule (@day_after)
+
     erb :schedule
-  end
-end
-
-class App < Sinatra::Base
-  get '/fib/:n' do
-    # TODO: implement an algorithm to calculate the fibonacci sequence at
-    # the nth position and display
-    # (4) points
-  end
-
-  get '/team-randomizer' do
-    # TODO: provide a form with a textarea that asks for a list of comma
-    # separated names. Randomize this list of names and display it as an
-    # ordered list (<ol>). 5 points
-  end
-
-  def fib(n)
-    # TODO: calculate fib
   end
 end
