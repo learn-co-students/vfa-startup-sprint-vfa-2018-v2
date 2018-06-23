@@ -1,14 +1,22 @@
 <h1>Startup Sprint!</h1>
+
+<!-- TODO: fix logo image -->
 <img src="images/learnco.jpg">
 
 <h3>Subscribe to the Stertup Sprint newsletter</h3>
+
 <% if @error == 'email' %>
   <p style="color: red;">Please enter a valid email</p>
 <% end %>
+
+<!-- TODO: Add form validations -->
 <form method=POST action="/subscribe">
   <label for="full-name">Full Name</label>
-  <input type="text" id="full-name" name="full_name" required>
+  <input type="text" id="full-name" name="full_name">
   <label for="email">Email</label>
-  <input type="text" id="email" name="email" required>
+  <input type="text" id="email" name="email">
+
+  <!-- TODO: add city field -->
+
   <input type="Submit">
 </form>
