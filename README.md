@@ -41,7 +41,7 @@ The backlog is here in this [Trello board](https://trello.com/b/gK1QntcZ).
 * Next, the team lead should then send the clone url to the rest of their teammates. This url will look something like `git@github.com:TEAM-LEAD-GITHUB-USERNAME/vfa-startup-sprint.git`.
 * Now every team member except their team lead should [update their git `remote` url](https://help.github.com/articles/changing-a-remote-s-url/) to the team lead's url.
   * Open this lesson in your current [Learn Environment](https://learn.co/account/environment)
-  * In the terminal, run the following command: `git remote set-url origin https://github.com/TEAM-LEAD-GITHUB-USERNAME/vfa-startup-sprint.git`
+  * In the terminal, run the following command: `git remote set-url origin https://github.com/TEAM-LEAD-GITHUB-USERNAME/vfa-startup-sprint.git` (**note:** the URL there is the clone link your team lead just shared with you)
   * Confirm that you've updated your remote by running `git remote -v`. You should see something like the following:
 
 ```text
@@ -49,6 +49,8 @@ The backlog is here in this [Trello board](https://trello.com/b/gK1QntcZ).
 origin  https://github.com/TEAM-LEAD-GITHUB-USERNAME/vfa-startup-sprint.git (fetch)
 origin  https://github.com/TEAM-LEAD-GITHUB-USERNAME/vfa-startup-sprint.git (push)
 ```
+
+* Finally, every team member should pull down the latest changes from the team lead's repo by running `git pull origin master` in their terminal.
 
 ## Getting Started
 
