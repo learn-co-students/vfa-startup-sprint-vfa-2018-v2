@@ -21,7 +21,6 @@ class App < Sinatra::Base
 
     erb :subscribe
   end
-
   get '/reddit' do
     # TODO: we can probably get Reddit listings with something like:
     # JSON.parse(RestClient.get('http://reddit.com/.json'))
@@ -73,7 +72,10 @@ class App < Sinatra::Base
   # TODO: design and implement /training page
 
   # TODO: add /team page
-
+  get '/team' do
+    "Hello World"
+    erb :team
+  end
   # TODO: add /video page
 
   # TODO: add /rainbow easter egg page
