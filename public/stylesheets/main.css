@@ -1,6 +1,6 @@
 .column {
   float: left;
-  width: 50%;
+  width: 33%;
 }
 
 .row:after{
@@ -10,7 +10,7 @@
 }
 
 :blank {
-  border-color: ;
+  border-color: green;
 }
 
 :valid {
@@ -18,4 +18,4 @@
 }
 :invalid {
   border-color: red;
-
+}
