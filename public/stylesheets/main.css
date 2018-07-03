@@ -10,12 +10,12 @@
 }
 
 :blank {
-  border-color: ;
+  border-color: blue;
 }
 
 :valid {
-  border-color: green;
+  border-color: blue;
 }
 :invalid {
   border-color: red;
-
+}
