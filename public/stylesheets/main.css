@@ -5,3 +5,6 @@
 .column {
 
 }
+:invalid {
+  border-color: red;
+}
