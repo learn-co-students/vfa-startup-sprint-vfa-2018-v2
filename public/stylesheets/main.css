@@ -8,3 +8,14 @@
   display: table;
   clear: both;
 }
+
+:blank {
+  border-color: ;
+}
+
+:valid {
+  border-color: green;
+}
+:invalid {
+  border-color: red;
+

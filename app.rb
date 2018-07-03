@@ -9,6 +9,7 @@ class App < Sinatra::Base
   post '/subscribe' do
     @full_name = params[:full_name]
     @email = params[:email]
+    @city_name = params[:city_name]
 
     if !@email.match(/.+@.+/)
       redirect to('/?error=email')
