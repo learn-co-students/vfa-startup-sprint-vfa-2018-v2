@@ -1,9 +1,12 @@
-/*
- * TODO: add custom styling
- */
-
 .column {
+  float: left;
+  width: 50%;
+}
 
+.row:after{
+  content: " ";
+  display: table;
+  clear: both;
 }
 
 :blank {
@@ -15,4 +18,4 @@
 }
 :invalid {
   border-color: red;
-}
+
