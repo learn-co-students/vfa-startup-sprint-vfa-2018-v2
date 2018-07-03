@@ -3,7 +3,7 @@
 <!-- TODO: fix logo image -->
 <img src="images/learnco.jpg">
 
-<h3>Subscribe to the Stertup Sprint newsletter</h3>
+<h3>Subscribe to the Startup Sprint newsletter</h3>
 
 <% if @error == 'email' %>
   <p style="color: red;">Please enter a valid email</p>
@@ -12,11 +12,12 @@
 <!-- TODO: Add form validations -->
 <form method=POST action="/subscribe">
   <label for="full-name">Full Name</label>
-  <input type="text" id="full-name" name="full_name">
+  <input type="text" id="full-name" name="full_name" required>
   <label for="email">Email</label>
-  <input type="text" id="email" name="email">
+  <input type="text" id="email" name="email" required>
 
   <!-- TODO: add city field -->
-
+  <label for="city">City</label>
+  <input type="text" id="city" name="city">
   <input type="Submit">
 </form>
