@@ -38,7 +38,7 @@ The backlog is here in this [Trello board](https://trello.com/b/gK1QntcZ).
 ### Set up team project repo
 
 * The team lead should fork this lesson and [add all team members as collaborators](https://help.github.com/articles/adding-collaborators-to-a-personal-repository/).
-* Next, the team lead should then send the clone url to the rest of their teammates. This url will look something like `git@github.com:TEAM-LEAD-GITHUB-USERNAME/vfa-startup-sprint.git`.
+* Next, the team lead should then send the clone url to the rest of their teammates. This url will look something like `git@github.com:TEAM-LEAD-GITHUB-USERNAME/vfa-startup-sprint.git`. (**note:** recommend using "Clone with SSH" url, otherwise your teammates will need to log in with their username and password from the command line)
 * Now every team member except their team lead should [update their git `remote` url](https://help.github.com/articles/changing-a-remote-s-url/) to the team lead's url.
   * Open this lesson in your current [Learn Environment](https://learn.co/account/environment)
   * In the terminal, run the following command: `git remote set-url origin https://github.com/TEAM-LEAD-GITHUB-USERNAME/vfa-startup-sprint.git` (**note:** the URL there is the clone link your team lead just shared with you)
