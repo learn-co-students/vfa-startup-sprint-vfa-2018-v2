@@ -6,7 +6,11 @@
 
 }
 
-:empty, :blank, :valid {
+:blank {
+  border-color: ;
+}
+
+:valid {
   border-color: green;
 }
 :invalid {
