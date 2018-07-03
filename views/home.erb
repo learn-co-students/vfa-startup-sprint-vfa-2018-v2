@@ -12,13 +12,13 @@
 <!-- TODO: Add form validations -->
 <form method=POST action="/subscribe">
   <label for="full-name">Full Name</label>
-  <input type="text" id="full-name" name="full_name" required>
+  <input type="text" id="full-name" name="full_name" value='<%@full_name%>' required>
   <label for="email">Email</label>
-  <input type="email" id="email" name="email" required>
+  <input type="email" id="email" name="email" value='<%@email%>' required>
 
   <!-- TODO: add city field -->
   <label for="city">City</label>
-  <input type="text" id="city" name="city_name" required>
+  <input type="text" id="city" name="city_name" value='<%@city_name%>' required>
   <input type="Submit">
 </form>
 <footer>
