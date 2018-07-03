@@ -53,7 +53,9 @@ class App < Sinatra::Base
   end
 
   # TODO: redirect /home to root
-
+  get '/home' do
+    redirect to('/')
+  end
   # TODO: design and implement /training page
 
   # TODO: add /team page
