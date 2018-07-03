@@ -6,6 +6,10 @@ class App < Sinatra::Base
     erb :home
   end
 
+  get '/images/learnco.jpg' do
+    "Hello World"
+  end
+
   post '/subscribe' do
     @full_name = params[:full_name]
     @email = params[:email]
@@ -46,8 +50,17 @@ class App < Sinatra::Base
       ['3:00pm', 'Coffee Time'],
       ['6:30pm', 'Meetup Presentation'],
     ]
+    
+    @day_after = [
+      ['8:00am', 'Breakfast'],
+      ['8:30am', 'Check In'],
+      ['9:00am', 'Credo'],
+      ['9:30am', 'Learning How to Start Up'],
+      ['12:00pm', 'Lunch'],
+      ['1:00pm', 'Being a Fellow'],
+      ['6:30pm', 'Group Dinner'],
+    ]
 
-    # TODO: add a third day's schedule (@day_after)
 
     erb :schedule
   end

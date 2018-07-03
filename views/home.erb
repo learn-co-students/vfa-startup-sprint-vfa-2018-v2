@@ -1,9 +1,9 @@
 <h1>Startup Sprint!</h1>
 
 <!-- TODO: fix logo image -->
-<img src="images/learnco.jpg">
+<img src="images/learnco.png" alt="logo">
 
-<h3>Subscribe to the Stertup Sprint newsletter</h3>
+<h3>Subscribe to the Startup Sprint newsletter</h3>
 
 <% if @error == 'email' %>
   <p style="color: red;">Please enter a valid email</p>
@@ -20,3 +20,6 @@
 
   <input type="Submit">
 </form>
+<footer>
+  <p> © VFA Startup Sprint <span id="year"><%= Date.today.year %></span></p>
+</footer>
