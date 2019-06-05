@@ -1,7 +1,21 @@
-/*
- * TODO: add custom styling
- */
-
 .column {
+  float: left;
+  width: 33%;
+}
 
+.row:after{
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+:blank {
+  border-color: green;
+}
+
+:valid {
+  border-color: green;
+}
+:invalid {
+  border-color: red;
 }

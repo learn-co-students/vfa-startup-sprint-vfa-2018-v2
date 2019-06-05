@@ -1,6 +1,6 @@
 <!-- TODO: Convert to multi-column layout -->
 
-<div>
+<div class="row">
   <div class="column">
     <h3>Today</h3>
     <ol>
@@ -13,6 +13,14 @@
     <h3>Tomorrow</h3>
     <ol>
       <% @tomorrow.each do |item| %>
+        <li><%= item.first %>: <%= item.last %></li>
+      <% end %>
+    </ol>
+  </div>
+    <div class="column">
+    <h3>Day After Tomorrow</h3>
+    <ol>
+      <% @day_after.each do |item| %>
         <li><%= item.first %>: <%= item.last %></li>
       <% end %>
     </ol>

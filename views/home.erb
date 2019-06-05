@@ -1,9 +1,9 @@
 <h1>Startup Sprint!</h1>
 
 <!-- TODO: fix logo image -->
-<img src="images/learnco.jpg">
+<img src="images/learnco.png" alt="logo">
 
-<h3>Subscribe to the Stertup Sprint newsletter</h3>
+<h3>Subscribe to the Startup Sprint newsletter</h3>
 
 <% if @error == 'email' %>
   <p style="color: red;">Please enter a valid email</p>
@@ -12,11 +12,15 @@
 <!-- TODO: Add form validations -->
 <form method=POST action="/subscribe">
   <label for="full-name">Full Name</label>
-  <input type="text" id="full-name" name="full_name">
+  <input type="text" id="full-name" name="full_name" value='<%@full_name%>' required>
   <label for="email">Email</label>
-  <input type="text" id="email" name="email">
+  <input type="email" id="email" name="email" value='<%@email%>' required>
 
   <!-- TODO: add city field -->
-
+  <label for="city">City</label>
+  <input type="text" id="city" name="city_name" value='<%@city_name%>' required>
   <input type="Submit">
 </form>
+<footer>
+  <p> © VFA Startup Sprint <span id="year"><%= Date.today.year %></span></p>
+</footer>
